@@ -4,6 +4,31 @@
 
 <p align="center">Quer saber o por que vale a pena trabalhar no Nibo? <a href="https://tech.nibo.com.br">tech.nibo.com.br</a></p>
 
+## Solução
+
+Foi desenvolvida uma **Api REST** com **NetCore 3.1** como interface para fazer o upload dos **arquivos OFX** e leitura das transações persistidas na base.
+Todas as transações estão sendo persistidas na base **SQLite**, e estão no arquivo **database.db** criado automaticamente após a primeira importação.
+
+Exectuar o projeto **Api.csproj** com os comandos abaixo:
+
+``` powerwhel
+cd src/Api
+dotnet build
+dotnet run
+```
+
+Acessar a documentação via swagger através da URL https://localhost:5001/swagger/index.html, onde serão encontrados dois endpoints, um para upload do arquivo OFX e outro para consutlar as transações persistidas na base. Os testes de upload são mais fáceis de serem feitos via Postman (https://www.postman.com/downloads/).
+
+Pode-se executar os testes unitários com os comandos abaixo:
+
+``` powerwhel
+cd src/Tests
+dotnet build
+dotnet test
+```
+
+## Desafio
+
 Olá!
 
 Primeiramente, parabéns por ter avançado ao Desafio para Developers do Nibo! 
