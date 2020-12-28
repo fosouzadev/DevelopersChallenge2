@@ -17,7 +17,7 @@ dotnet build
 dotnet run
 ```
 
-Acessar a documentação via swagger através da URL https://localhost:5001/swagger/index.html, onde serão encontrados dois endpoints, um para upload do arquivo OFX e outro para consutlar as transações persistidas na base. Os testes de upload são mais fáceis de serem feitos via Postman (https://www.postman.com/downloads/).
+Acessar a documentação via swagger através da URL https://localhost:5001/swagger/index.html, onde serão encontrados dois endpoints, um para upload do arquivo OFX e outro para consultar as transações persistidas na base. Os testes de upload são mais fáceis de serem feitos via Postman (https://www.postman.com/downloads/).
 
 Pode-se executar os testes unitários com os comandos abaixo:
 
